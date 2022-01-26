@@ -1,0 +1,55 @@
+$blue: #4cdbe6;
+$red: #b74f64;
+$brown: #595150;
+$beige: #dacfbd;
+
+$threshold: 55%;
+$white: #e6e6e6;
+$black: #2c2c2c;
+
+@function contrast-color($color, $dark, $light) {
+  @return if(lightness($color) < $threshold, $light, $dark);
+}
+
+@mixin button($background-color, $dark: $black, $light: $white) {
+  background-color: $background-color;
+  color: contrast-color($background-color, $dark, $light);
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  width: auto;
+  text-align: center;
+  border-radius: 0.2rem;
+  margin: 0.5rem;
+  &:hover {
+    background-color: darken($background-color, 15%);
+    color: contrast-color(darken($background-color, 15%), $dark, $light);
+  }
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+p {
+  color: $brown;
+  text-align: center;
+  padding: 1em 0;
+}
+section {
+  padding: 1rem;
+  width: 20rem;
+  margin: 0 auto;
+  a.one {
+    @include button($red);
+  }
+  a.two {
+    @include button($blue);
+  }
+  a.three {
+    @include button($brown);
+  }
+  a.four {
+    @include button($beige);
+  }
+}

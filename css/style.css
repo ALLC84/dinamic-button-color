@@ -1,0 +1,84 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+p {
+  color: #595150;
+  text-align: center;
+  padding: 1em 0;
+}
+
+section {
+  padding: 1em;
+  width: 20em;
+  margin: 0 auto;
+}
+
+section a.one {
+  background-color: #b74f64;
+  color: #e6e6e6;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  width: auto;
+  text-align: center;
+  border-radius: 2px;
+  margin: 0.5em;
+}
+
+section a.one:hover {
+  background-color: #843646;
+  color: #e6e6e6;
+}
+
+section a.two {
+  background-color: #4cdbe6;
+  color: #2c2c2c;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  width: auto;
+  text-align: center;
+  border-radius: 2px;
+  margin: 0.5em;
+}
+
+section a.two:hover {
+  background-color: #1cbdc9;
+  color: #e6e6e6;
+}
+
+section a.three {
+  background-color: #595150;
+  color: #e6e6e6;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  width: auto;
+  text-align: center;
+  border-radius: 2px;
+  margin: 0.5em;
+}
+
+section a.three:hover {
+  background-color: #312c2c;
+  color: #e6e6e6;
+}
+
+section a.four {
+  background-color: #dacfbd;
+  color: #2c2c2c;
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  width: auto;
+  text-align: center;
+  border-radius: 2px;
+  margin: 0.5em;
+}
+
+section a.four:hover {
+  background-color: #bfab8c;
+  color: #2c2c2c;
+}
+/*# sourceMappingURL=style.css.map */
